@@ -1,33 +1,48 @@
-# Gradle files
-.gradle/
-build/
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Jumlah Uang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        #total {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
 
-# Local configuration file (sdk path, etc)
-local.properties
+    <h2>Tabel Jumlah Uang</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>NO</th>
+                <th>Jumlah Uang (Rp)</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Baris Tabel Akan Ditambahkan Oleh JavaScript -->
+        </tbody>
+    </table>
+    <div id="total">Total Uang: Rp <span id="totalAmount">0</span></div>
 
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
-
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+    <script src="script.js"></script>
+</body>
+</html>
